@@ -39,7 +39,7 @@ search: true
 
 Parameter | Default | Description
 --------- | ------- | -----------
-coin_symbol | required | Supported coin symbol. <a href="/#supported-coins-list">See details</a>
+coin_symbol | required | Supported coin symbol. <a href="#supported-coins-list">See details</a>
 
 
 
@@ -69,7 +69,7 @@ coin_symbol | required | Supported coin symbol. <a href="/#supported-coins-list"
 
 Parameter | Default | Description
 --------- | ------- | -----------
-coin_symbol | required | Supported coin symbol. <a href="/#supported-coins-list">**See details**</a>
+coin_symbol | required | Supported coin symbol. <a href="#supported-coins-list">**See details**</a>
 address | required | Wallet address
 
 ### Query Parameters
@@ -105,7 +105,7 @@ contract | Smart contract address (**only ERC20 tokens**)
 
 Parameter | Default | Description
 --------- | ------- | -----------
-coin_symbol | required | Supported coin symbol. <a href="/#supported-coins-list">**See details**</a>
+coin_symbol | required | Supported coin symbol. <a href="#supported-coins-list">**See details**</a>
 
 
 
@@ -149,7 +149,7 @@ coin_symbol | required | Supported coin symbol. <a href="/#supported-coins-list"
 
 Parameter | Default | Description
 --------- | ------- | -----------
-coin_symbol | required | Supported coin symbol. <a href="/#supported-coins-list">**See details**</a>
+coin_symbol | required | Supported coin symbol. <a href="#supported-coins-list">**See details**</a>
 
 ### Request Parameters
 
@@ -159,7 +159,7 @@ pk | required | Private key
 from | required | Sender's wallet address
 to | required | Receiver's wallet address
 amount | required | Amount to send
-contract | optional |Smart contract address(**Required for only ERC20 tokens**)
+contract | optional | Smart contract address(**Required for only ERC20 tokens**)
 
 
 
@@ -214,5 +214,5 @@ contract | optional |Smart contract address(**Required for only ERC20 tokens**)
 
 Parameter | Default | Description
 --------- | ------- | -----------
-coin_symbol | required | Supported coin symbol. <a href="/#supported-coins-list">**See details**</a>
+coin_symbol | required | Supported coin symbol. <a href="#supported-coins-list">**See details**</a>
 address | required | Wallet address
