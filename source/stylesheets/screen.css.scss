@@ -102,7 +102,9 @@ html, body {
   }
 
   .logo {
-    margin-bottom: $logo-margin;
+    /*margin-bottom: $logo-margin;*/
+    margin: 20px 15px;
+    width: calc(100% - 30px);
   }
 
   .search-results {
