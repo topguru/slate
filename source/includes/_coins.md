@@ -18,3 +18,4 @@ ColossusXT | colx
 Sumokoin | sumo
 Kalicoin | kali
 Skycoin | sky
+SolarBanker Coin | slb
