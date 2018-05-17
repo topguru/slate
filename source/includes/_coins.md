@@ -18,4 +18,5 @@ ColossusXT | colx
 Sumokoin | sumo
 Kalicoin | kali
 Skycoin | sky
+Creative Coin | crea
 SolarBanker Coin | slb
