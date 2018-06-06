@@ -20,3 +20,5 @@ Kalicoin | kali
 Skycoin | sky
 Creative Coin | crea
 SolarBanker Coin | slb
+iDealCash | deal
+DeepOnion | onion
