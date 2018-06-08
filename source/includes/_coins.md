@@ -11,6 +11,7 @@ Electra Coin | eca
 Rupee | rup
 Omnicoin | omni
 SAFEX(Safe Exchange Coin) | safex
+Tether | usdt
 Verge | xvg
 XEM Coin | xem
 LoyalCoin | lyl
