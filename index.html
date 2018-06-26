@@ -274,6 +274,9 @@
                   <li>
                     <a href="#url-parameters-5" class="toc-h2 toc-link" data-title="Get received transaction list by address">URL Parameters</a>
                   </li>
+                  <li>
+                    <a href="#query-parameters-2" class="toc-h2 toc-link" data-title="Get received transaction list by address">Query Parameters</a>
+                  </li>
               </ul>
           </li>
           <li>
@@ -337,7 +340,7 @@
   </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="err">&lt;Error</span><span class="w"> </span><span class="err">message&gt;</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre><h3 id='http-request-2'>HTTP Request</h3>
-<p><code>GET /wallet/balance/&lt;coin_symbol&gt;/&lt;address&gt;?[contract=&lt;erc20 token&#39;s smart contract address&gt;]</code></p>
+<p><code>GET /wallet/balance/&lt;coin_symbol&gt;/&lt;address&gt;?[contract=&lt;erc20 token&#39;s smart contract address&gt;][&amp;asset=&lt;Asset ID in NEO blockchain&gt;]</code></p>
 <h3 id='url-parameters-2'>URL Parameters</h3>
 <table><thead>
 <tr>
@@ -367,6 +370,10 @@
 <tr>
 <td>contract</td>
 <td>Smart contract address (<strong>only ERC20 tokens</strong>)</td>
+</tr>
+<tr>
+<td>asset</td>
+<td>Asset ID (<strong>only in NEO blockchain</strong>)</td>
 </tr>
 </tbody></table>
 <h1 id='get-transaction-fee-in-blockchain-network'>Get transaction fee in blockchain network</h1>
@@ -477,6 +484,16 @@
 <td>optional</td>
 <td>Smart contract address(<strong>Required for only ERC20 tokens</strong>)</td>
 </tr>
+<tr>
+<td>memo</td>
+<td>optional</td>
+<td>The receiver&#39;s memo(<strong>Required for only MUSE blockchain</strong>)</td>
+</tr>
+<tr>
+<td>asset</td>
+<td>optional</td>
+<td>Asset ID(<strong>Required for only NEO blockchain</strong>)</td>
+</tr>
 </tbody></table>
 <h1 id='get-received-transaction-list-by-address'>Get received transaction list by address</h1>
 <blockquote>
@@ -519,7 +536,7 @@
   </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="err">&lt;Error</span><span class="w"> </span><span class="err">message&gt;</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre><h3 id='http-request-5'>HTTP Request</h3>
-<p><code>GET /transaction/list/&lt;coin_symbol&gt;/&lt;address&gt;</code></p>
+<p><code>GET /transaction/list/&lt;coin_symbol&gt;/&lt;address&gt;?[contract=&lt;erc20 token&#39;s smart contract address&gt;][&amp;asset=&lt;Asset ID in NEO blockchain&gt;]</code></p>
 <h3 id='url-parameters-5'>URL Parameters</h3>
 <table><thead>
 <tr>
@@ -537,6 +554,22 @@
 <td>address</td>
 <td>required</td>
 <td>Wallet address</td>
+</tr>
+</tbody></table>
+<h3 id='query-parameters-2'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>contract</td>
+<td>Smart contract address (<strong>only ERC20 tokens</strong>)</td>
+</tr>
+<tr>
+<td>asset</td>
+<td>Asset ID (<strong>only in NEO blockchain</strong>)</td>
 </tr>
 </tbody></table>
 <h1 id='supported-coins-list'>Supported coins list</h1>
@@ -629,6 +662,18 @@
 <tr>
 <td>DeepOnion</td>
 <td>onion</td>
+</tr>
+<tr>
+<td>ECCoin</td>
+<td>ecc</td>
+</tr>
+<tr>
+<td>MUSE Blockchain</td>
+<td>muse</td>
+</tr>
+<tr>
+<td>NEO Blockchain</td>
+<td>neo</td>
 </tr>
 </tbody></table>
 
