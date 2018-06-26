@@ -26,3 +26,4 @@ DeepOnion | onion
 ECCoin | ecc
 MUSE Blockchain | muse
 NEO Blockchain | neo
+Syscoin | sys
