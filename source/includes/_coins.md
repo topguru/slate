@@ -23,3 +23,6 @@ Creative Coin | crea
 SolarBanker Coin | slb
 iDealCash | deal
 DeepOnion | onion
+ECCoin | ecc
+MUSE Blockchain | muse
+NEO Blockchain | neo

@@ -63,7 +63,7 @@ coin_symbol | required | Supported coin symbol. <a href="#supported-coins-list">
 
 ### HTTP Request
 
-`GET /wallet/balance/<coin_symbol>/<address>?[contract=<erc20 token's smart contract address>]`
+`GET /wallet/balance/<coin_symbol>/<address>?[contract=<erc20 token's smart contract address>][&asset=<Asset ID in NEO blockchain>]`
 
 ### URL Parameters
 
@@ -77,6 +77,7 @@ address | required | Wallet address
 Parameter | Description
 --------- | -----------
 contract | Smart contract address (**only ERC20 tokens**)
+asset    | Asset ID (**only in NEO blockchain**)
 
 
 # Get transaction fee in blockchain network
@@ -160,6 +161,8 @@ from | required | Sender's wallet address
 to | required | Receiver's wallet address
 amount | required | Amount to send
 contract | optional | Smart contract address(**Required for only ERC20 tokens**)
+memo | optional | The receiver's memo(**Required for only MUSE blockchain**)
+asset | optional | Asset ID(**Required for only NEO blockchain**)
 
 
 
@@ -208,7 +211,7 @@ contract | optional | Smart contract address(**Required for only ERC20 tokens**)
 
 ### HTTP Request
 
-`GET /transaction/list/<coin_symbol>/<address>`
+`GET /transaction/list/<coin_symbol>/<address>?[contract=<erc20 token's smart contract address>][&asset=<Asset ID in NEO blockchain>]`
 
 ### URL Parameters
 
@@ -216,3 +219,10 @@ Parameter | Default | Description
 --------- | ------- | -----------
 coin_symbol | required | Supported coin symbol. <a href="#supported-coins-list">**See details**</a>
 address | required | Wallet address
+
+### Query Parameters
+
+Parameter | Description
+--------- | -----------
+contract | Smart contract address (**only ERC20 tokens**)
+asset    | Asset ID (**only in NEO blockchain**)
